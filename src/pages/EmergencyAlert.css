@@ -1,0 +1,140 @@
+.emergency-page {
+  min-height: 100vh;
+}
+
+.emergency-success {
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 3rem;
+  text-align: center;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.emergency-success h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.emergency-success p {
+  color: var(--slate);
+  margin-bottom: 0.75rem;
+}
+
+.emergency-success .btn-primary {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.emergency-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (max-width: 900px) {
+  .emergency-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.emergency-form-section h1 {
+  margin-bottom: 0.5rem;
+}
+
+.emergency-desc {
+  color: var(--slate);
+  margin-bottom: 2rem;
+}
+
+.emergency-form {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.emergency-form .form-group {
+  margin-bottom: 1.25rem;
+}
+
+.emergency-form .form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+
+.emergency-form input,
+.emergency-form select,
+.emergency-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+}
+
+.emergency-form input:focus,
+.emergency-form select:focus,
+.emergency-form textarea:focus {
+  outline: none;
+  border-color: var(--blood-crimson);
+}
+
+.btn-emergency {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--emergency);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  margin-top: 1rem;
+}
+
+.btn-emergency:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(214, 40, 40, 0.3);
+}
+
+.emergency-list {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  height: fit-content;
+}
+
+.emergency-list h3 {
+  margin-bottom: 1rem;
+}
+
+.emergency-mini-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.emergency-mini-card:last-child {
+  border-bottom: none;
+}
+
+.emergency-bg {
+  background: #fee2e2;
+  color: var(--blood-crimson);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+}
+
+.emergency-mini-card a {
+  margin-left: auto;
+  color: var(--blood-crimson);
+  font-weight: 600;
+}

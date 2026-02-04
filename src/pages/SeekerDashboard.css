@@ -1,0 +1,155 @@
+.seeker-dashboard {
+  min-height: 100vh;
+}
+
+.seeker-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.seeker-header {
+  margin-bottom: 2rem;
+}
+
+.seeker-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.seeker-header p {
+  color: var(--slate);
+}
+
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 280px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.85rem 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+.search-form input:focus {
+  outline: none;
+  border-color: var(--blood-crimson);
+}
+
+.blood-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.blood-filters span {
+  font-size: 0.95rem;
+  color: var(--slate);
+}
+
+.blood-filters select {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  color: var(--blood-crimson);
+}
+
+.donors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.donor-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+}
+
+.donor-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
+}
+
+.donor-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.donor-avatar {
+  width: 52px;
+  height: 52px;
+  background: var(--gradient-blood);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.donor-blood {
+  background: #fee2e2;
+  color: var(--blood-crimson);
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+}
+
+.donor-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.donor-location, .donor-type {
+  font-size: 0.9rem;
+  color: var(--slate);
+  margin-bottom: 0.5rem;
+}
+
+.btn-contact {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--gradient-blood);
+  color: white;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.btn-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.no-donors {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: var(--radius-md);
+  color: var(--soft-gray);
+}
+
+.no-donors p {
+  margin-bottom: 0.5rem;
+}

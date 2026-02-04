@@ -1,0 +1,256 @@
+.donor-dashboard {
+  min-height: 100vh;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media (max-width: 800px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.profile-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  background: var(--gradient-blood);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.profile-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blood-badge {
+  display: inline-block;
+  background: #fee2e2;
+  color: var(--blood-crimson);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.status-badge {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--soft-gray);
+}
+
+.status-badge.eligible {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.profile-location {
+  font-size: 0.9rem;
+  color: var(--slate);
+  margin-top: 0.5rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-nav button {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  color: var(--slate);
+}
+
+.sidebar-nav button:hover {
+  border-color: var(--blood-crimson);
+  color: var(--blood-crimson);
+}
+
+.sidebar-nav button.active {
+  background: var(--gradient-blood);
+  color: white;
+  border-color: transparent;
+}
+
+.main-content {
+  min-width: 0;
+}
+
+.post-creator {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 1.5rem;
+}
+
+.post-creator textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: var(--radius-sm);
+  resize: vertical;
+  font-family: var(--font-body);
+  margin-bottom: 0.75rem;
+}
+
+.post-creator textarea:focus {
+  outline: none;
+  border-color: var(--blood-crimson);
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feed-card {
+  background: white;
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.feed-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.feed-avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--gradient-blood);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.feed-blood {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--blood-crimson);
+  font-weight: 600;
+}
+
+.feed-text {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.feed-actions button {
+  background: none;
+  color: var(--slate);
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.feed-actions button:hover {
+  color: var(--blood-crimson);
+}
+
+.empty-feed {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: var(--radius-md);
+  color: var(--soft-gray);
+}
+
+.alerts-section h2 {
+  margin-bottom: 0.5rem;
+}
+
+.alerts-desc {
+  color: var(--slate);
+  margin-bottom: 2rem;
+}
+
+.empty-alerts {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: var(--radius-md);
+  color: var(--soft-gray);
+}
+
+.empty-alerts a {
+  color: var(--blood-crimson);
+  font-weight: 600;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alert-card {
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+}
+
+.emergency-card {
+  background: #fef2f2;
+  border: 2px solid var(--blood-light);
+}
+
+.alert-badge {
+  display: inline-block;
+  background: var(--emergency);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.emergency-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.alert-location, .alert-contact {
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}

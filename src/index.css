@@ -1,0 +1,110 @@
+/* Bloodmate - Unique Design System */
+:root {
+  --blood-crimson: #c41e3a;
+  --blood-dark: #8b1538;
+  --blood-light: #e63946;
+  --cream: #faf8f5;
+  --warm-white: #fffbf7;
+  --charcoal: #1a1a1a;
+  --slate: #2d3748;
+  --soft-gray: #718096;
+  --success: #2d6a4f;
+  --warning: #f4a261;
+  --emergency: #d62828;
+  --gradient-blood: linear-gradient(135deg, #c41e3a 0%, #8b1538 100%);
+  --gradient-warm: linear-gradient(180deg, #fffbf7 0%, #faf8f5 100%);
+  --shadow-soft: 0 4px 24px rgba(196, 30, 58, 0.08);
+  --shadow-card: 0 8px 32px rgba(26, 26, 26, 0.06);
+  --shadow-hover: 0 12px 40px rgba(196, 30, 58, 0.12);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--gradient-warm);
+  color: var(--charcoal);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+}
+
+input, select, textarea {
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--blood-light);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blood-crimson);
+}
+
+/* Shared buttons */
+.btn-primary {
+  background: var(--gradient-blood);
+  color: white;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--blood-crimson);
+  border: 2px solid var(--blood-crimson);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background: var(--blood-crimson);
+  color: white;
+}
